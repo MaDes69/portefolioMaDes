@@ -1,0 +1,56 @@
+html {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align :center;
+}
+
+
+/* Animation fumee café */
+
+#fumes {
+    animation: fumes 4s infinite;
+  }
+
+
+@keyframes fumes {
+    0%{transform: translateY(0px); opacity: 1;}
+    50%{ opacity: .5;}
+    100%{transform: translateY(-40px); opacity: 0;}
+  }
+
+
+/* Animation boire */
+#bras{
+    animation : bras 4s ease-in-out infinite ;
+    transform-origin: bottom right;
+    /* transform-box: fill; */
+
+}
+#tasse{
+    animation : bras 4s ease-in-out infinite ;
+    transform-origin: bottom right;
+
+} 
+
+
+@keyframes bras {
+  0%{ transform:rotate(0deg);}
+  50% { transform: rotate(35deg) translate(-20px, 200px);}
+  100%{ transform:rotate(0deg);}
+}
+
+/* Tourner la tête  */
+/* 
+#tete{
+    animation: tete 4s infinite;
+  }
+
+  @keyframes tete {
+    0%{transform: translateX(0px); opacity: 1;}
+    50%{ opacity: 1 ;}
+    100%{transform: translateX(40px); opacity: 1;}
+  } */
